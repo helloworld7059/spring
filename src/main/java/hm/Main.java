@@ -5,11 +5,9 @@ import hm.controller.UserController;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import java.sql.SQLException;
-
 public class Main {
 
-    public static void main(String[] args) throws SQLException {
+    public static void main(String[] args) {
 
         ApplicationContext ac = new ClassPathXmlApplicationContext("spring-config.xml");
         UserController userController = (UserController) ac.getBean("userController");
